@@ -1,0 +1,694 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: usual, rigid-square, sans-serif;
+  box-sizing: content-box;
+  color: #442240;
+}
+
+/* General tags
+================================= */
+
+article {
+  grid-column: 2/2;
+  margin: 2em 1em 2em 0em;
+  background-color: #ffffff;
+  padding: 1em;
+  border-radius: 20px;
+  box-shadow: -6px 10px 0px rgba(0, 0, 0, 0.75);
+  /*rgba for transparency value */
+}
+
+/* LINK, VISITED, HOVER, ACTIVE
+================================= */
+
+a:link {
+  color: inherit;
+}
+
+a:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+code {
+  font-size: 1em;
+  font-weight: 700;
+  white-space: pre-line;
+}
+
+footer {
+  grid-column: 1/4;
+  clear: both;
+  padding: 2em;
+  color: #fff;
+  background: #442240;
+  display: flex;
+  place-items: flex-end;
+  justify-content: flex-end;
+}
+
+footer p {
+  padding-right: 1em;
+}
+
+img {
+  max-width: 95%;
+  height: auto;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h1,
+h2,
+h3,
+h4,
+header {
+  font-family: rigid-square, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+header hr {
+  border: 3px solid #e8f48c;
+  margin: -1em -1em 0em -1em;
+}
+
+mark {
+  background: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+label {
+  display: flex;
+  margin: 0.75em 1em 0 0;
+  font-weight: 700;
+}
+
+input[type="submit"] {
+  width: 17em;
+}
+
+fieldset,
+textarea,
+input {
+  border: 2px solid#442240;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 50%;
+  height: 100px;
+  padding: 12px 20px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+/* TimeTable structure 
+================================= */
+
+table {
+  margin: 0 auto 0 auto;
+}
+
+table th,
+table td {
+  padding: 1em;
+  width: 10em;
+  text-align: center;
+}
+
+caption {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+/* Classes and iD
+================================= */
+
+.wrapper {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+  position: relative;
+  background-image: linear-gradient(#d8b2d1, #442240);
+  width: fit-content;
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+#index {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.menu {
+  text-align: end;
+  width: -webkit-fill-available;
+  grid-column: 1/4;
+  position: absolute;
+}
+
+.menu ul {
+  padding-left: 0;
+  display: inline-flex;
+}
+
+.menu li {
+  display: block;
+  padding: 1em;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#sidebar {
+  grid-column: 1/2;
+  width: 75%;
+  height: fit-content;
+  margin: 1em 0 1em 1em;
+  border-radius: 20px;
+  background: white;
+  box-shadow: -6px 10px 0px rgba(0, 0, 0, 0.75);
+  /* rgba for transparency value */
+}
+
+#sidebar li a {
+  line-height: 3em;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.banner {
+  padding: 12em 0 0 0;
+  color: #ffffff;
+}
+
+#banner-index {
+  /* Photo by Anders Jildén on Unsplash */
+  /* https://unsplash.com/@andersjilden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText */
+  /* https://unsplash.com/s/photos/pink?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText */
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.25)
+    ),
+    url(../images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  grid-column: 1/4;
+}
+
+/* Chat box
+================================= */
+
+.chat {
+  position: relative;
+  background-color: #e8f48c;
+  border-radius: 12em;
+  padding: 1em;
+  margin: 3em;
+  text-align: center;
+}
+
+.chat cite {
+  position: relative;
+  bottom: -3rem;
+  font-weight: 800;
+}
+
+.left::after {
+  content: "";
+  border: 20px solid transparent;
+  border-left: 20px solid #e8f48c;
+  border-top: 20px solid #e8f48c;
+  position: absolute;
+  bottom: -1em;
+  left: 80%;
+}
+
+.right::after {
+  content: "";
+  border: 20px solid transparent;
+  border-right: 20px solid #e8f48c;
+  border-top: 20px solid #e8f48c;
+  position: absolute;
+  bottom: -20px;
+  right: 84%;
+}
+
+/* TimeTable division 
+================================= */
+
+.days,
+.time {
+  background: #e8f48c;
+}
+
+.time {
+  width: 3em !important;
+  height: 2em;
+}
+
+/* TimeTable color sheme 
+================================= */
+
+.ci401 {
+  background: #cae024;
+}
+
+.ci404 {
+  background: #9cab27;
+}
+
+.ci453 {
+  background: #e68ed6;
+}
+
+.ci435 {
+  background: #ad74a3;
+}
+
+.ci405 {
+  background: #fcc5f2;
+}
+
+.blank {
+  background-color: #fff;
+}
+
+/* Glowing text effect 
+================================= */
+
+.glow {
+  color: #ffffff;
+  text-shadow: 0 0 10px #0000ff;
+  font-weight: 700;
+}
+
+/* Go to top button
+================================= */
+
+.button {
+  background: #e8f48c;
+  border-radius: 1em;
+  border: solid 2px#0000;
+  display: block;
+  width: 7em;
+  line-height: 3em;
+  text-align: center;
+  text-decoration: none;
+  color: #442240;
+  margin: 1em;
+  box-shadow: -6px 10px 0px rgba(0, 0, 0, 0.75);
+  /*rgba for transparency value */
+}
+
+.button:focus,
+.button:hover {
+  background-color: #000000;
+  color: #e8f48c;
+}
+
+.float {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Week 5 demobox
+================================= */
+
+.demobox {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  border: 3px solid #000000;
+  background-color: #442240;
+  height: auto;
+  text-align: center;
+  width: fit-content;
+}
+
+.demobox div {
+  background-color: #e8f48c;
+  border-radius: 20px;
+  padding: 1em;
+  margin: 1em 0 1em 0;
+}
+
+.demobox div:first-child {
+  background: #9cab27;
+  margin-left: 0 !important;
+  color: #000000;
+}
+
+.demobox div:nth-child(2) {
+  background-image: url("../images/plants.jpg");
+  padding-top: 0;
+}
+
+.demobox div:nth-child(3) {
+  background-image: url("../images/limes.jpg");
+  background-repeat: repeat-y;
+  background-size: 50%;
+  background-position: right;
+}
+
+.demobox div:nth-child(3) p {
+  width: 50%;
+}
+
+.demobox div:last-child {
+  margin-left: 2em;
+  border: 1em solid #000000;
+}
+
+/* Flexible video
+================================= */
+
+.video-wrapper {
+  max-width: 960px;
+  margin-right: 1em;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /*16:9 aspect ratio */
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-container.message {
+  height: 18em;
+  width: 18em;
+}
+
+#checklist li::before {
+  content: url(../images/checkmark.svg);
+  display: block;
+  width: 8em;
+  height: 18em;
+  margin: -4em 0em -13em -4em;
+}
+
+/* Tutorial 
+================================= */
+
+.tutorial-page {
+  /* Photo by Mpho Mojapelo on Unsplash */
+  /* https://unsplash.com/@mpho_mojapelo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText */
+  /* https://unsplash.com/s/photos/time-pink?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText */
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.25)
+    ),
+    url(../images/tutorial-banner.jpg);
+  background-position: bottom;
+  background-attachment: fixed;
+  background-blend-mode: difference;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cards ::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible only for cards */
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 25em;
+  height: 25em;
+  perspective: 1000px;
+  margin: 1em;
+  overflow: scroll;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  /* 3d effect*/
+}
+
+/* Spin effect 
+================================= */
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 95%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1em;
+  flex-direction: column;
+}
+
+.flip-card-front {
+  background-color: #af2a7a;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.flip-card-back {
+  background-color: white;
+  transform: rotateY(180deg);
+  font-family: helvetica;
+  border: 6px solid black;
+  border-radius: 27px;
+  overflow-y: auto;
+}
+
+.messages {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.iphone {
+  position: sticky;
+  width: 28rem;
+  height: 13rem;
+  background-size: 100%;
+  margin: -4em 0 0 -3em;
+}
+
+.emma {
+  background-image: url(../images/iphoneheader.svg);
+}
+
+.denisa {
+  background-image: url(../images/iphoneheaderDe.svg);
+}
+
+.jeramel {
+  background-image: url(../images/iphoneheaderJ.svg);
+}
+
+.ieva {
+  background-image: url(../images/iphoneheaderIeva.svg);
+}
+
+.message {
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: justify;
+}
+
+.question {
+  align-items: flex-end;
+}
+
+.question .message {
+  color: #fff;
+  margin: 0 5px 0 25%;
+  background: linear-gradient(to bottom, #00d0ea 0%, #0085d1 100%);
+  background-attachment: fixed;
+  position: relative;
+}
+
+.answer {
+  align-items: flex-start;
+}
+
+.answer .message {
+  margin: 0 25% 10px 5px;
+  background: #eee;
+  position: relative;
+  color: black;
+}
+
+.tutorial-page footer {
+  background: #af2a7a;
+}
+
+/* Contact 
+================================= */
+
+.contact-page {
+  /* Photo by Behzad Ghaffarian on Unsplash */
+  /* https://unsplash.com/@behz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText */
+  /* https://unsplash.com/s/photos/hello?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText */
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.25)
+    ),
+    url(../images/contact-banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: difference;
+  color: #ffffff;
+}
+
+.contact-page header {
+  padding: 26em 0 0 0;
+}
+
+#form {
+  width: 65%;
+  margin-left: 17%;
+}
+
+#pronoun {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.contact-page footer {
+  background: linear-gradient(#934e99, #70386f);
+}
+
+/* Media queries */
+
+/* iPhone 6+, 7+ and 8+
+================================= */
+
+@media only screen and (max-width: 645px) {
+  article {
+    width: 100%;
+    margin: 2em 2em 2em 0;
+    grid-column: 1/3;
+  }
+  textarea {
+    width: 100%;
+  }
+  /* Index page ajustment for mobile version  
+   ================================= */
+  /* Go to top button float to left
+   ================================= */
+  .float {
+    justify-content: flex-start;
+  }
+  #banner-index {
+    height: 70vh;
+  }
+  .demobox div:nth-child(3) p {
+    width: 50%;
+    margin: 3em 0 0 -1em;
+  }
+  #sidebar {
+    grid-column: 1/3;
+    width: 94%;
+  }
+  #sidebar ul {
+    display: inline-flex;
+    padding-left: 8px;
+    flex-wrap: wrap;
+  }
+  #sidebar li {
+    padding-right: 1em;
+  }
+  /* Contact page ajustment for mobile version  
+   ================================= */
+  .contact-page {
+    background-position: 54% -109%;
+    background-size: inherit;
+  }
+  .contact-page header {
+    padding: 16em 0 0 0;
+  }
+  /*Tutorial page ajustment for mobile version  
+   ================================= */
+  #form {
+    width: 100%;
+    font-size: small;
+    margin: 0;
+  }
+  .tutorial-page {
+    background-position: right;
+  }
+  .tutorial-page header {
+    padding: 3em 0 0 0;
+  }
+  .iphone {
+    width: 25rem;
+    height: 11rem;
+  }
+}
+
+/* Landscape for mobile devices
+================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  #sidebar {
+    display: none;
+  }
+  article {
+    width: 100%;
+    margin: 2em 2em 2em 0;
+    grid-column: 1/3;
+  }
+  #banner-index {
+    height: 100vh;
+  }
+  .iphone {
+    width: 28rem;
+    height: 12em;
+  }
+}

@@ -1,0 +1,503 @@
+<!doctype html>
+<!--HTML5 doctype declaration -->
+<html lang="en">
+   <!--default language of the document content -->
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link href="css/normalize.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.typekit.net/qil0hul.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="icon" type="image/ico" href="images/favicon.ico">
+      <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <!--character encoding for the document (Unicode) -->
+      <title> Caroline's Learning Journal</title>
+      <!--web page title -->
+   </head>
+   <body>
+      <!--Markup all web page content inside the 'body' tags -->
+      <div class="wrapper">
+         <a id="top"></a>
+         <!--The 'wrapper' contains all the page content-->
+         <nav class="menu">
+            <!--The primary navigation for the page -->
+            <ul>
+               <li><a href="index.html">Learning Journal</a></li>
+               <li><a href="tutorial.html">Tutorial</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+         <header class="banner" id="banner-index">
+            <!--The main heading for the page -->
+            <h1>CI435 Learning Journal</h1>
+            <h2>How to make a responsive website</h2>
+         </header>
+         <main id="index">
+            <!--The main page content -->
+            <aside id="sidebar">
+               <h3>The weekly post</h3>
+               <ul>
+                  <li><a href="#week1">Week 1</a></li>
+                  <li><a href="#week2">Week 2</a></li>
+                  <li><a href="#week3">Week 3</a></li>
+                  <li><a href="#week4">Week 4</a></li>
+                  <li><a href="#week5">Week 5</a></li>
+                  <li><a href="#week6">Week 6</a></li>
+                  <li><a href="#week7">Week 7</a></li>
+                  <li><a href="#week8">Week 8</a></li>
+                  <li><a href="#week9">Week 9</a></li>
+                  <li><a href="#week10">Week 10</a></li>
+               </ul>
+            </aside>
+            <article>
+               <header>
+                  <h3><a id="week1"></a>Week 1: Getting started</h3>
+                  <p>Created on <time datetime="2020-10-07">October 7, 2020</time> </p>
+                  <hr>
+               </header>
+               <p>In this first week, we ended up with a basic 3-pages website. In this tutorial we learned how to do the following things:
+               </p>
+               <ol>
+                  <li>Set up a folder for my website on my Brighton Domains workspace</li>
+                  <li>Set up a folder for CSS and images that later will add to page (to keep organized)</li>
+                  <li>Set up the <code>index.html</code> (front page), <code>tutorial.html</code>, <code>contact.html</code></li>
+                  <li>Link all the pages together with a navigation menu using a relative link</li>
+                  <li>Use <code>h1</code> and <code>h2</code> tags</li>
+                  <li>Create article for every weekly post and header for each</li>
+                  <li>Validate HTML using the W3C validator and how it is important do everyday to look for errors</li>
+               </ol>
+               <figure>
+                  <img src="images/screenshot-files.png" alt="screenshot brigthon domains" />
+                  <figcaption>Files on Brighton Domains<br />
+                     <small>Screenshot &copy; CB</small>
+                  </figcaption>
+               </figure>
+               <h4>References:</h4>
+               <ol>
+                  <li><a href="http://validator.w3.org/">W3C markup validation service</a></li>
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN HTML Element Index</a></li>
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/UL">MDN Unordered List </a></li>
+               </ol>
+               <div class="float"> <a href="#top" class="button"  role="button">Go to top</a></div>
+            </article>
+            <article>
+               <header>
+                  <h3><a id="week2"></a>Week 2: Learning more tags</h3>
+                  <p>Created on <time datetime="2020-10-14">October 14, 2020</time></p>
+                  <hr>
+               </header>
+               <p>In this second week, we learned about tags and how to create website structure with MDN Web Docs to understand basic section of the page. I decided to divide my page using those sections below:</p>
+               <ul>
+                  <li><strong>Navigation Bar</strong> - menu of website <code>&lt;nav&gt;</code></li>
+                  <li><strong>Sidebar</strong> - menu for articles <code>&lt;aside&gt;</code></li>
+                  <li><strong>Header</strong> - title of page <code>&lt;header&gt;</code></li>
+                  <li><strong>Main Content</strong> - breakdown of weeks <code>&lt;main&gt;</code></li>
+                  <li><strong>Footer</strong> - copyright data <code>&lt;footer&gt;</code></li>
+               </ul>
+               <p>For each week I created article containing header with date and title. For date, i use the tag <code>&lt;datetime&gt;</code> which I found MDN Web Docs that improves the search results choose the format YYYY-MM-DD.</p>
+               <p>I discovered how to make citation on the website using speech bubbles:</p>
+               <blockquote class="chat right">
+                  <p>W3C validator, could check if my website is work so far?</p>
+                  <cite>
+                  Caroline Barra - student
+                  </cite>
+               </blockquote>
+               <blockquote class="chat left">
+                  <p>Document checking completed. No errors or warnings to show.</p>
+                  <cite>
+                  <a href="http://validator.w3.org/">W3C validator</a>
+                  </cite>
+               </blockquote>
+               <h4>References:</h4>
+               <ol>
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure">Document and website structure</a></li>
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks ">MDN - creating hyperlinks </a></li>
+                  <li><a href="https://code-boxx.com/responsive-css-speech-bubbles/">Chat Bubble</a></li>
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time">MDN Time Element</a></li>
+               </ol>
+               <div class="float"> <a href="#top" class="button"  role="button">Go to top</a></div>
+            </article>
+            <article>
+               <header>
+                  <h3><a id="week3"></a>Week 3: Learning about list and tables</h3>
+                  <p>Created on <time datetime="2020-10-21">October 21, 2020</time></p>
+                  <hr>
+               </header>
+               <p>In the third week, we learned how to use different types of lists and understand each functionality.</p>
+               <h4>Nesting an unordered list within an order list </h4>
+               <ol>
+                  <li>
+                     <strong>Week 1</strong>
+                     <ul>
+                        <li>Set up site folders</li>
+                        <li>Create index.html</li>
+                        <li>Create tutorial.html</li>
+                        <li>Create about.html</li>
+                        <li>Link files using <code>a tag</code> for the navigation</li>
+                     </ul>
+                  </li>
+                  <li>
+                     <strong>Week 2</strong>
+                     <ul>
+                        <li>Divide the page in sections</li>
+                        <li>Add posts, horizontal ruler, and date</li>
+                        <li>Add named anchors</li>
+                     </ul>
+                  </li>
+                  <li>
+                     <strong>Week 3</strong>
+                     <ul>
+                        <li>Add rowspan to take space of two cells in row in table</li>
+                        <li>Add caption for table</li>
+                     </ul>
+                  </li>
+               </ol>
+               <h4>Creating description list to explain the key elements to create a table</h4>
+               <dl>
+                  <dt><code>&lt;table&gt;</code></dt>
+                  <dd>The body that holds the whole information</dd>
+                  <dt><code>&lt;caption&gt;</code></dt>
+                  <dd>Title of table</dd>
+                  <dt><code>&lt;th&gt;</code></dt>
+                  <dd>"Tabular headers"</dd>
+                  <dt><code>&lt;td&gt;</code></dt>
+                  <dd>"Tabular data"</dd>
+                  <dt><code>&lt;td rowpan="2"&gt;</code></dt>
+                  <dd>Being single row but taking space for two rows, important attribute for table cell.</dd>
+               </dl>
+               <p>As well, i managed to create a timetable for my classes thanks to CSS-Tricks: </p>
+               <table>
+                  <caption>My TimeTable</caption>
+                  <tr class="days">
+                     <th></th>
+                     <th>Monday</th>
+                     <th>Tuesday</th>
+                     <th>Wednesday</th>
+                  </tr>
+                  <tr>
+                     <td class="time">9AM- 10AM</td>
+                     <td  rowspan="3" class="blank"></td>
+                     <td rowspan="2" class="ci404">CI404 lecture</td>
+                     <td class="ci401">CI401 Lab<br />
+                        Watts 202
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="time">10AM-11AM</td>
+                     <td rowspan="2" class="ci404">CI404 Lab<br />
+                        Cockcroft 204
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="time">11AM-12PM</td>
+                     <td rowspan="2" class="blank"></td>
+                  </tr>
+                  <tr>
+                     <td class="time">12PM-1PM</td>
+                     <td class="ci401">CI401 Seminar</td>
+                     <td  class="blank"></td>
+                  </tr>
+                  <tr>
+                     <td class="time">1PM-2PM</td>
+                     <td rowspan="5"  class="blank"></td>
+                     <td class="ci435">CI453 Lecture</td>
+                     <td class="ci435" >CI435 Lab<br />
+                        Watts 201
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="time">2PM-3PM</td>
+                     <td class="ci401">CI401 Lecture</td>
+                     <td  class="blank">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="time">3PM-4PM</td>
+                     <td   class="blank"></td>
+                     <td class="ci453"> CI453 Lab<br />
+                        Watts 513
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="time">4PM-5PM</td>
+                     <td class="ci405">CI405 Lecture</td>
+                     <td class="ci405"> CI405 Lab<br />
+                        Cockcroft 109
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="time">5PM-6PM</td>
+                     <td class="ci453">CI435 Lab</td>
+                     <td  class="blank"></td>
+                  </tr>
+               </table>
+               <h4>References:</h4>
+               <ol>
+                  <li><a href="https://css-tricks.com/complete-guide-table-element/">A Complete Guide to the Table Element</a></li>
+                  <li><a href="https://css-tricks.com/a-complete-guide-to-links-and-buttons/">A Complete Guide to Links and Buttons</a></li>
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/UL">MDN Unordered List </a></li>
+               </ol>
+               <div class="float"> <a href="#top" class="button"  role="button">Go to top</a></div>
+            </article>
+            <article>
+               <header>
+                  <h3><a id="week4"></a>Week 4: Learning CSS Basics</h3>
+                  <p>Created on <time datetime="2020-10-28">October 28, 2020</time></p>
+                  <hr>
+               </header>
+               <p>In this week, we start to add some <span class="glow">life</span> and <span class="glow">color</span> to the website.
+                  With folder that we created on first week called CSS, we are finally going to give some meaning to those initials.  W3.org describes CSS as:
+               </p>
+               <blockquote class="chat left">
+                  <p><strong>Cascading Style Sheets (CSS)</strong> is a simple mechanism for adding style (e.g., fonts, colors, spacing) to Web documents.</p>
+                  <cite><a href="https://www.w3.org/Style/CSS/Overview.en.html">www.w3.org</a></cite>
+               </blockquote>
+               <p>The reason that we kept the HTML and the CSS in different files is to avoid confusion as we add content more each week. However, we needed to find a way to link them together by using the tag below:</p>
+               <br><code>&lt;link rel="stylesheet" href="css/style.css"&gt;</code>
+               <dl>
+                  <dt><code>rel</code></dt>
+                  <dd>To inform web document that it's file is linked to style sheet</dd>
+                  <dt><code>href</code></dt>
+                  <dd>To locate stylesheet</dd>
+               </dl>
+               <p>Now that we can controlled the style of the page, I choose new font for body and different one for the headers from Abode Font.</p>
+               <p>In order to connect the style with HTML element, we have to use the proper selector. E.g:<br>
+                  <code> code {
+                  font-size: 18px;
+                  font-weight: 700;
+                  white-space: pre;
+                  }</code>
+               </p>
+               <p>From CSS-Tricks, I learned that I can target specific elements and create rules for different groups using the selectors below:</p>
+               <ul>
+                  <li><strong>#id</strong>: use for unique element on website. </li>
+                  <li><strong>.class</strong>: use for all the elements of the same type.  </li>
+               </ul>
+               <p>I came with the conclusion that without CSS, website is just <em>simple</em> and <em>dull</em> text.</p>
+               <p>
+                  <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                  <img style="border:0;width:88px;height:31px"
+                     src="http://jigsaw.w3.org/css-validator/images/vcss"
+                     alt="Valid CSS!" />
+                  </a>
+               </p>
+               <h4>References:</h4>
+               <ol>
+                  <li><a href="https://css-tricks.com/how-css-selectors-work/">How CSS Selectors Work</a></li>
+                  <li><a href="https://fonts.adobe.com/fonts/usual">Adobe Font - Usual</a></li>
+                  <li><a href="https://medium.com/actualize-network/modern-css-explained-for-dinosaurs-5226febe3525">Modern CSS Explained </a></li>
+               </ol>
+               <div class="float"> <a href="#top" class="button"  role="button">Go to top</a></div>
+            </article>
+            <article>
+               <header>
+                  <h3><a id="week5"></a>Week 5: CSS box model and measurements</h3>
+                  <p>Created on <time datetime="2020-11-04">November 4, 2020</time></p>
+                  <hr>
+               </header>
+               <p>In this week, we are getting to know how the position works in the webpage as well as how to recognize when to use margin, padding or border. I have created a demo to show how distinct they are.</p>
+               <div class="demobox">
+                  <div>On this first div, there is no space in between the bigger div to this div (due to margin left to this div being 0) however adding the padding we can centre text.</div>
+                  <div><mark>On this second div, have <code>background-image</code> covering the whole box but now with no padding on top making text sit on top. To increase the readability, I used the <code>mark</code> tag to highlight the text.</mark> </div>
+                  <div>
+                     <p>On third div, we have <code>background<br/>-image</code> but this time we have limes position on right-side of div. On the last div, have the references and border line around it.</p>
+                  </div>
+                  <div>
+                     <h4>References:</h4>
+                     <ol>
+                        <li>Photo by <a href="https://unsplash.com/@splashabout?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nareeta Martin</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></li>
+                        <li>Photo by <a href="https://unsplash.com/@andrewcoop?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Andrew Coop</a> on <a href="https://unsplash.com/s/photos/limes?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">Introduction to the CSS basic box model</a></li>
+                        <li><a href="https://www.smashingmagazine.com/2019/07/margins-in-css/">Everything You Need To Know About CSS Margins</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.">Relationship of grid layout to other layout methods</a></li>
+                        <li><a href="https://www.w3.org/TR/CSS2/box.html">Box model</a></li>
+                     </ol>
+                  </div>
+               </div>
+               <div class="float"> <a href="#top" class="button"  role="button">Go to top</a></div>
+            </article>
+            <article>
+               <header>
+                  <h3><a id="week6"></a>Week 6: Making page responsive</h3>
+                  <p>Created on <time datetime="2020-11-11">November 11, 2020</time></p>
+                  <hr>
+               </header>
+               <p>As CSS file start to grow, i realize how important is to keep your stylesheet organized and tidy.I found few tips to keep well organized:</p>
+               <dl>
+                  <dt>Keep it consistent</dt>
+                  <dd>The first and more important to keep everything in same formatting such as naming the classes, decide between use rem or em or how to name the color with HEX or RBG.</dd>
+                  <dt>Making comment on CSS</dt>
+                  <dd>Adding comments to make easy to find code after and make easier for others to understand what code is doing.</dd>
+                  <dt>Make logical order for stylesheet</dt>
+                  <dd>Decide to start with general styles, after classes and at end media queries.</dd>
+               </dl>
+               <p>On this week, we learned how to make page responsive with CSS tricks. I made the decision to go for Holy Grail Layout:</p>
+               <blockquote class="chat left">
+                  <p><strong>Holy Grail</strong> is a layout pattern that's very common on the web. It consists of a header, a main content area with fixed-width navigation on the left, content in the middle and a fixed-width sidebar on the right and then a footer.</p>
+                  <cite><a href="https://www.digitalocean.com/community/tutorials/css-css-grid-holy-grail-layout#:~:text=Holy%20Grail%20is%20a%20layout,right%20and%20then%20a%20footer.">CSS Grid: Holy Graid Layout</a></cite>
+               </blockquote>
+               <img src="images/website-layout.jpg" alt=" Website Layout">
+               <p>At first, I had position the sidebar on mobile version to be float to the right. As left-handed user myself, the struggle to avoid clicking the like button while scroll down to the page on mobile is inevitable.</p>
+               <p>However, after i found article that said 49% of users are one-handed use in which 67% use their right thumb on the screen  to navigate the website. I had to relocate my sidebar to the top to increase usability. Also relocated "go to top" button to left when using mobile devices.</p>
+               <p>On the same article, shows that holding mobile device is landscape mode is about 10% for that reason, i took it out the sidebar menu from landscape mode.</p>
+               <h4>References:</h4>
+               <ol>
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing">Organizing your CSS</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=qm0IfG1GyZU&list=LL&index=1&t=226s&ab_channel=GoogleChromeDevelopers">10 modern layouts in 1 line of CSS</a></li>
+                  <li><a href="https://css-tricks.com/scrollfollow-sidebar/">Scroll/Follow Sidebar</a></li>
+                  <li><a href="https://www.uxmatters.com/mt/archives/2013/02/how-do-users-really-hold-mobile-devices.php">How Do Users Really Hold Mobile Devices?</a></li>
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.">Relationship of grid layout to other layout methods</a></li>
+               </ol>
+               <div class="float"> <a href="#top" class="button"  role="button">Go to top</a></div>
+            </article>
+            <article>
+               <header>
+                  <h3><a id="week7"></a>Week 7: Flexible Media</h3>
+                  <p>Created on <time datetime="2020-11-17">November 17, 2020</time></p>
+                  <hr>
+               </header>
+               <p>This week, we learned about flexible media that when i learn about <code>favicon</code>, which is tab icon to indentify the page. Thanks to this tutorial below manage to create my own personalized <code>favicon</code>.</p>
+               <div class="video-wrapper">
+                  <div class="video-container">
+                     <iframe src="https://www.youtube.com/embed/tKetmXmDho8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+               </div>
+               <p>To insure that video would be flexible, i created video container div with zero height and padding bottom with 56.25% for 16:9 aspect ratio with instructions from CSS Tricks. It is necessary to target iframe for absolute position and all positions set to 0 in order to keep the video at same position. </p>
+               <h4>References:</h4>
+               <ol>
+                  <li><a href="https://favicon.io/favicon-converter/">Fav Icon</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Favicon">Fav Icon Wikipedia</a></li>
+                  <li><a href="https://css-tricks.com/rundown-of-handling-flexible-media/#flexible-video">Flexible Video</a></li>
+               </ol>
+               <div class="float"> <a href="#top" class="button"  role="button">Go to top</a></div>
+            </article>
+            <article>
+               <header>
+                  <h3><a id="week8"></a>Week 8: Responsive Layout</h3>
+                  <p>Created on <time datetime="2020-11-24">November 24, 2020</time></p>
+                  <hr>
+               </header>
+               <p>For tutorial page, I decide to use flexbox. By making use of <code>flex-wrap: wrap</code> to organize the cards by creating a three-column layout however in case of resize the website window layout will change to two columns until gets to 857px width and for mobile screens which is around 480px width transforms at one column. To align the cards to centre of the page, utilized <code>justify-content: center</code>.</p>
+               <p>Flexbox makes easier to positioning items.</p>
+               <figure>
+                  <img src="images/tutorial1.jpg" alt="tutorial screen 1509px width" />
+                  <figcaption>Tutorial screen with 1509px width<br />
+                     <small>Screenshot &copy; CB</small>
+                  </figcaption>
+               </figure>
+               <figure>
+                  <img src="images/tutorial3.jpg" alt="tutorial screen 1024px width"/>
+                  <figcaption>Tutorial screen with 1024px width<br />
+                     <small>Screenshot &copy; CB</small>
+                  </figcaption>
+               </figure>
+               <figure>
+                  <img src="images/tutorial2.jpg" alt="tutorial screen 375px width"/>
+                  <figcaption>Tutorial screen with 375px width<br />
+                     <small>Screenshot &copy; CB</small>
+                  </figcaption>
+               </figure>
+               <p>Another important concept that i learn this week was to develop the site for mobile first is important to avoid pixels and use percentages or ems instead. The reason is that pixel has nothing to do with real pixel on the screen. While using <strong>em</strong> deals better with relative space.</p>
+               <h4>References:</h4>
+               <ol>
+                  <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a></li>
+                  <li><a href="https://css-tricks.com/why-ems/">Why Ems?</a></li>
+               </ol>
+               <div class="float"> <a href="#top" class="button"  role="button">Go to top</a></div>
+            </article>
+            <article>
+               <header>
+                  <h3><a id="week9"></a>Week 9: Forms</h3>
+                  <p>Created on <time datetime="2020-12-01">December 1, 2020</time></p>
+                  <hr>
+               </header>
+               <p>On this week, we learned how to create contact form with HTML and CSS. I decide to focus more HTML part and keep CSS <em>clean</em> and <em>simple</em>.</p>
+               <p>Kept form simple only asked relevant information. Learned to avoid dropdown menu when it is possible because it does not work well in mobile version and to opt for radio input instead and to keep the label and the input close to each other making easier recognition.</p>
+               <blockquote class="chat left">
+                  <p>On the web, people’s attention spans are very short. Your visitors will tune out your content if you don’t get to the point quickly. According to a Microsoft Research study by Chao Liu and colleagues, users will leave a page in just 10 to 20 seconds, not leaving designers with much time to successfully persuade their visitors to take a specific action. </p>
+                  <cite><a href="https://blog.adobe.com/en/publish/2018/07/09/less-dos-donts-designing-web-forms.html#gs.ouz15c">The Dos and Don’ts of Designing Web Forms</a></cite>
+               </blockquote>
+               <p>There are essential tags to create form:</p>
+               <dl>
+                  <dt><code>&lt;form id="form"&gt;</code></dt>
+                  <dd>First step and involves all the form.<strong>id attribute</strong> is essential for interactive of the webpage.</dd>
+                  <dt><code>&lt;fieldset&gt;</code></dt>
+                  <dd>Divide the form with different groups of boxes.</dd>
+                  <dt><code>&lt;legend&gt;</code></dt>
+                  <dd>Where you name the different groups.</dd>
+                  <dt><code>&lt;label for="name"&gt;</code></dt>
+                  <dd>Label for input data.<strong>for attribute</strong> needs to be equal as <strong>id attribute</strong> of the input.</dd>
+                  <dt><code>&lt;input id="name"&gt;</code></dt>
+                  <dd>There are few type of inputs however the most important ones being: <strong>text </strong>for enter data and <strong>submit</strong> to the form.</dd>
+                  <dt><code>&lt;textarea&gt;</code></dt>
+                  <dd>Usually used for message.</dd>
+                  <dt><code>&lt;select&gt;</code></dt>
+                  <dd>Create select options box.</dd>
+               </dl>
+               <h4>References:</h4>
+               <ol>
+                  <li><a href="https://www.smashingmagazine.com/2018/08/best-practices-for-mobile-form-design/">Best Practices For Mobile Form Design</a></li>
+                  <li><a href="https://uxplanet.org/the-18-must-do-principles-in-the-form-design-fe89d0127c92">16 Tips that Will Improve Any Online Form</a></li>
+               </ol>
+               <div class="float"> <a href="#top" class="button"  role="button">Go to top</a></div>
+            </article>
+            <article>
+               <header>
+                  <h3><a id="week10"></a>Week 10: Testing and Evaluation</h3>
+                  <p>Created on <time datetime="2020-12-08">December 8, 2020</time></p>
+                  <hr>
+               </header>
+               <p>For last week, we need to test and evalution your website. I have been constantly using Chrome DevTools to change my website live and checking how does it look for different medias queries. Chrome DevTools were very helpful to testing how <code>css</code> would work.</p>
+               <p>After few weeks added more html tag to my file, i notice that my file was getting a bit messy so i found one website to keep the same formatter.</p>
+               <h3>Checklist:</h3>
+               <ul id="checklist">
+                  <li>Every single link and button funcionality.</li>
+                  <li>Chrome DevTools to guarantee media queries standard.</li>
+                  <li>CSS and HTML validator.</li>
+                  <li>Add copyright to images.</li>
+                  <li>Double checking contrast color  to fit both  WCAG AA and WCAG AAA for Accessibilty.</li>
+                  <li>Fix white space on firebox browser.</li>
+                  <li>Image with alt-text to increase accessibilty.</li>
+                  <li><a href="https://www.toptal.com/designers/colorfilter?orig_uri=http://cpb30.brighton.domains/ci435/index.html&process_type=grey"><img alt="See your web site through colorblind eyes with the colorblind web page filter." src="https://www.toptal.com/designers/colorfilter/static/colorfilter_button.png" width="88" height="31">Colorblind Check</a></li>
+               </ul>
+               <p>I could avoid using margin and padding to relocate my elements on the page and use more proper grid to keep the elements in right position and more responsible. I should research more at beginning to avoid losing time by change the layout few times. I tried multiple style for navbar and sidebar, I am not 100% sure about sidebar but enjoy the functionality of it.</p>
+               <p>I kept short and simple for the website to be more engage and dynamic by bring only key points about each subject using examples and made sure to include all my references for each week. Kept my CSS file organized.</p>
+               <p>At tutorial page, took me the longer to get flip effect to work out and to create the scroll down function. I wanted to keep very casual by using text messages and to guarantee that my audience feel less lonely while studying during lockdown. By designing the mobile layout to feel more engaging and fun. Also bringing bright colours and even adding emojis and videos.</p>
+               <h5>Friend Evaluation:</h5>
+               <p>He felt that tutorial was engaging. He liked the flip effect and scroll down function, colours and font were good. However, it was missing more images and maybe more informal conversation. Overall, it was very easy to follow.</p>
+               <h4>References:</h4>
+               <ol>
+                  <li><a href="https://www.freeformatter.com/html-formatter.html#ad-output">HTML Formatter</a></li>
+                  <li><a href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/#top-of-site">Media Queries for Standard Devices</a></li>
+                  <li><a href="https://webaim.org/resources/contrastchecker/">Contrast Checker</a></li>
+                  <li><a href="http://jigsaw.w3.org/css-validator/">CSS Validation Service</a></li>
+                  <li><a href="http://jigsaw.w3.org/css-validator/">Markup Validation Service</a></li>
+               </ol>
+               <div class="float"> <a href="#top" class="button"  role="button">Go to top</a></div>
+            </article>
+            <!--Close main page content -->
+         </main>
+         <footer>
+            <!--Footer content -->
+            <p>
+               <a href="https://validator.w3.org/check?uri=http://cpb30.brighton.domains/ci435/index.html"><img
+                  src="http://www.w3.org/Icons/valid-xhtml10"
+                  alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+            </p>
+            <p>
+               <a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fcpb30.brighton.domains%2Fci435%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"><img
+                  src="http://jigsaw.w3.org/css-validator/images/vcss"
+                  alt="Valid CSS!" height="31" width="88" /></a>
+            </p>
+            <p> <a href="mailto:cpb30@brighton.ac.uk">Email me for any questions.</a></p>
+            <small>&copy; 2020, CB.</small>
+         </footer>
+      </div>
+      <!--Close 'wrapper' div -->
+   </body>
+   <!--Close 'body' -->
+</html>
+<!--Close 'html' -->

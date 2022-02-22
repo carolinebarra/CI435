@@ -1,0 +1,82 @@
+<!doctype html><!--HTML5 doctype declaration -->
+<html lang="en">
+   <!--default language of the document content -->
+   <head>
+      <meta charset="utf-8">
+      <!--character encoding for the document (Unicode) -->
+      <meta name="viewport" content="width=device-width">
+      <link href="css/normalize.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.typekit.net/qil0hul.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="icon" type="image/ico" href="images/favicon.ico">
+      <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <title>Contact</title>
+      <!--web page title -->
+   </head>
+   <body>
+      <!--Markup all web page content inside the 'body' tags -->
+      <div class="contact-page">
+         <!--The 'wrapper' contains all the page content-->
+         <nav class="menu">
+            <!--The primary navigation for the page -->
+            <ul>
+               <li><a href="index.html">Learning Journal</a></li>
+               <li><a href="tutorial.html">Tutorial</a></li>
+               <li><a href="">Contact</a></li>
+            </ul>
+         </nav>
+         <header class="banner">
+            <!--The main heading for the page -->
+            <h1>Contact me</h1>
+            <h2>If you would to leave any feedback, dont heasite to contact me.</h2>
+         </header>
+         <main id="contact">
+            <!--The main page content -->
+            <form id="form" >
+               <fieldset>
+                  <legend>Your contact details</legend>
+                  <label for="name">Name</label>
+                  <input placeholder="" id="name" type="text" required/>
+                  <label for="email">Email</label>
+                  <input placeholder="" id="email" type="email" required/>
+                  <label>Preferred gender pronoun:</label>
+                  <div id="pronoun"><input type="radio" id="she" name="pronoun" value="she">
+                     <label for="she">She/her</label>
+                     <input type="radio" id="he" name="pronoun" value="he">
+                     <label for="he">He/him</label>
+                     <input type="radio" id="they" name="pronoun" value="they">
+                     <label for="they">They/Them</label>
+                  </div>
+               </fieldset>
+               <fieldset>
+                  <legend>Your feedback:</legend>
+                  <label for="message">Message: </label>
+                  <textarea id="message" placeholder="" required></textarea>
+               </fieldset>
+               <input type="submit" value="Your feedback is always welcome" class="button"  />
+            </form>
+         </main>
+         <footer>
+            <!--Footer content -->
+            <p>
+               <a href="https://validator.w3.org/check?uri=http://cpb30.brighton.domains/ci435/contact.html"><img
+                  src="http://www.w3.org/Icons/valid-xhtml10"
+                  alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+            </p>
+            <p>
+               <a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fcpb30.brighton.domains%2Fci435%2Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"><img
+                  src="http://jigsaw.w3.org/css-validator/images/vcss"
+                  alt="Valid CSS!" height="31" width="88" /></a>
+            </p>
+            <p> <a href="mailto:cpb30@brighton.ac.uk">Email me for any questions.</a></p>
+            <small>&copy; 2020, CB.</small>
+         </footer>
+      </div>
+      <!--Close 'wrapper' div -->
+   </body>
+   <!--Close 'body' -->
+</html>
+<!--Close 'html' -->
